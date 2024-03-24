@@ -15,7 +15,7 @@ public class ReadFile {
                 double max = Double.MIN_VALUE;
                 double sum = 0;
                 int count = 0;
-
+                
                 while (fileScanner.hasNextDouble()) {
                     double number = fileScanner.nextDouble();
                     sum += number;

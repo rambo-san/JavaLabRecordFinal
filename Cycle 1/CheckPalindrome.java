@@ -14,7 +14,7 @@ class CheckPalindrome{
 	}
 	
 	public static int checkPal(String str){
-	char[] rev = str.toCharArray();
+	char[] rev = str.trim().toCharArray();
 	StringBuilder st= new StringBuilder();
 	for(int i=rev.length-1;i>=0;i--){
 		st.append(rev[i]);

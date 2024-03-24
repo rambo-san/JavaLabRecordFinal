@@ -18,6 +18,8 @@ public class URLDemo {
                 while ((i=in.read())!=-1 && i<len) {
                     fout.write((char)i);
                 }
+                in.close();
+                System.out.println("File Downloaded");
             }
             catch(Exception e){}
             }
