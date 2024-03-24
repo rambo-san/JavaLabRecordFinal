@@ -1,15 +1,16 @@
 import java.util.*;
 class CheckPalindrome{
 	public static void main(String args[]){
-	Scanner s=new Scanner(System.in);
-	String str;
-	System.out.println("Enter the String : ");
-	str=s.nextLine().trim();
-	System.out.println("Entered String : "+str);
-	if(checkPal(str)==1)
-		System.out.println("The string is palindrome!");
-	else
-		System.out.println("The string is not palindrome!");
+	try (Scanner s = new Scanner(System.in)) {
+		String str;
+		System.out.println("Enter the String : ");
+		str=s.nextLine().trim();
+		System.out.println("Entered String : "+str);
+		if(checkPal(str)==1)
+			System.out.println("The string is palindrome!");
+		else
+			System.out.println("The string is not palindrome!");
+	}
 	}
 	
 	public static int checkPal(String str){
