@@ -22,6 +22,11 @@ public class Learn1 {
                 System.out.println(c[i][j]);
             }
         }
+        for(int[] x : d){
+            for(int y : x) {
+                System.out.println(y);
+            }
+        }
         System.out.println("Hello World");
     }
 }
