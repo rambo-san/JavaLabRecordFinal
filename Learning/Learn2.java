@@ -1,4 +1,8 @@
 package Learning;
+
+import B;
+import C;
+
 final class A{
     void show(){
         System.out.println("A");
